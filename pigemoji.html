@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <style>
+             
+            .face{
+                border:10px solid black;
+                width:400px;
+                height:400px;
+                background-color: #FF92A5;
+                background-color:;
+                border-radius: 100%;
+                z-index: -2;
+            
+                
+            }
+            .face::before{
+            content: "";
+            width: 400px;
+            height: 400px;
+            position: relative; 
+           }
+           .ear-section{
+                width: 600px;
+                height: 600px;
+                top: 50px;
+                left: 20px;
+                float: left;
+                position:absolute;
+                z-index: -1;
+            }
+            .left-ear, .right-ear{
+                border:10px solid black;
+                background-color:#FF92A5;
+                height:90px;
+                width:90px;
+                position:absolute;
+                border-radius: 100%;
+                top: -10px;
+                left:-10;        
+                }
+                .right-ear{
+                left:290px;
+            }
+            .mouth-section{
+                border:5px solid black;
+                position:absolute;
+                background-color: plum;
+                width: 160px;
+                height:80px;
+                top:320px;
+                left:133px;
+                border-bottom-right-radius: 40px;
+                border-top-right-radius: 40px;
+                border-bottom-left-radius: 40px;
+                border-top-left-radius: 40px; 
+                
+
+            }
+            .left-mouth, .right-mouth{
+                border:5px solid black;
+                background-color: rgb(0, 0, 0);
+                height:40px;
+                width:30px;
+                position:absolute;
+                border-radius: 100%;
+                top: 18px;
+                left:20
+                }
+              
+            .right-mouth{
+                left:99px;
+            }            
+         
+            
+            .eye-section{
+                position:absolute;
+                width:600px;
+                height:600px;  
+                top: 150px;
+                left:60px;}
+            .left-eye, .right-eye{
+                border:5px solid black;
+                background-color: white;
+                height:100px;
+                width:100px;
+                position:absolute;
+                border-radius: 100%;
+                }
+            .right-eye{
+                left:200px;
+            }            
+            .left-eye::before, .right-eye::before{
+                content:"";
+                display:block;
+                background-color: black;
+                width:60px;
+                height:60px;
+                position:absolute;
+                top: 20px;px;
+                left:20px;
+                border-radius: 75%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My emojii..</h1>&
+        <div class="face">
+            <div class="ear-section">
+                <div class="left-ear"></div>
+                 <div class="right-ear"></div>   
+                     </div>
+    
+                <div class="mouth-section">
+                <div class="left-mouth"></div>
+                <div class="right-mouth"></div>
+                </div>
+                <div class="eye-section">
+                <div class="left-eye"></div>
+                <div class="right-eye"></div>
+
+            </div>
+        </div>
+    </body>
+</html>
